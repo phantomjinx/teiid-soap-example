@@ -30,7 +30,7 @@ public interface StateService {
     @ResponseWrapper(localName = "GetStateInfoResponse", targetNamespace = "http://www.teiid.org/stateService/", className = "org.teiid.stateservice.GetStateInfoResponse")
     @WebMethod(operationName = "GetStateInfo", action = "http://www.teiid.org/stateService/GetStateInfo")
     public org.teiid.stateservice.StateInfo getStateInfo(
-        @WebParam(name = "stateCode", targetNamespace = "")
+        @WebParam(name = "stateCode", targetNamespace = "http://www.teiid.org/stateService/")
         java.lang.String stateCode
     ) throws GetStateInfoFault_Exception;
 }

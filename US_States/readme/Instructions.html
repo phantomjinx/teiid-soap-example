@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Teiid Designer WSDL To Relational Models Example</title>
+</head>
+<body>
+
+	<h2>
+		<img src="images/designer-header.png" />
+	</h2>
+
+	<hr style="width: 100%; height: 2px;">
+
+	<h2>Teiid Designer WSDL To Relational Models Example</h2>
+
+	This importer results in the creation of queryable relational
+	procedures that represent your desired request and response web service
+	structure defined through your WSDL's schema definition.
+
+	<h3>JBoss Application Server Setup</h3>
+
+	In order to complete this example, you will need to install and run a local instance of 
+	<a href="http://www.jboss.org/jbossas/">JBoss AS</a> 5.1.0 with <a href="http://www.jboss.org/teiid">Teiid</a> 7.7. 
+	You can download the <var>JBoss</var> AS 5.1 <a href="http://www.jboss.org/jbossas/downloads/">here</a> 
+	and <var>Teiid</var> 7.7 <a href="http://sourceforge.net/projects/teiid/files/OldFiles/">here</a>. These <var>Teiid</var> 
+	<a href="http://docs.jboss.org/teiid/7.7.0.Final/admin-guide/en-US/html/installation.html">installation instructions</a> 
+	also explain how to install <var>JBoss</var> AS and CXF (required by the example).
+	
+	<br><br>
+	
+	Once <var>JBoss</var> AS and <var>Teiid</var> is installed run this command, in the <var>JBoss</var> AS <code>bin</code> directory, to start 
+	the application server:
+	
+	<br><br>
+	
+	<code>./run.sh -c teiid-profile-name</code>
+
+	<h3>Deploy WAR</h3>
+
+	Start <var>Designer</var> and import the example project called <code>US_States</code>. In the project's <code>deploy</code> directory
+	there is a file called <code>StateService.war</code>. This WAR file needs to be deployed to your running <var>JBoss</var> AS. Copying
+	that WAR file into the <code>server/teiid-profile-name/deploy</code> directory does that deployment.
+
+	<h3>Run Importer</h3>
+
+	This importer is accessed by launching Eclipse's <code>Import...</code> action. Here is what that importer dialog
+	looks like:
+
+	<br><br>
+
+	<img src="images/ImporterChooser.png" 
+			style="border: 1px solid;" alt="Importer chooser wizard"
+			title="Importer Wizard" />
+
+	<br><br>
+
+	Select the <code>Teiid Designer > WSDL File or URL >> Source and View Model (SOAP)</code> option and the importer wizard
+	starts. The first page of the importer looks like this:
+
+	<br><br>
+
+	<img src="images/WizardEmptyPage1.png" 
+			style="border: 1px solid;" alt="Create Relational Model From Web Service wizard"
+			title="Create Relational Model From Web Service" />
+
+	<br><br>
+
+	Click on the <code>New...</code> connection profile button. This starts a connection profile wizard which looks like this:
+
+	<br><br>
+
+	<img src="images/ConnectionProfile.png" 
+			style="border: 1px solid;" alt="New Connection Profile wizard"
+			title="New Connection Profile" />
+	
+	<br><br>
+	
+	Select the <code>Web Services Data Source (SOAP)</code> , edit the name if you wish, and click <code>Next ></code>. This
+	displays the <code>Web Services Connection Properties</code> page which looks like this:
+
+	<br><br>
+
+	<img src="images/ConnectionProfilePage2.png" 
+			style="border: 1px solid;" alt="New Connection Profile wizard Web Service Connection Properties page"
+			title="New Connection Profile Web Service Connection Properties" />
+
+	<br><br>
+
+	Click the <code>URL...</code> button to display the <code>WSDL URL</code> dialog. Enter 
+	<code>http://localhost:8080/StateService/StateService?wsdl</code> as the URL. The security type, user name, and 
+	password are not required. This dialog will look like this:
+	
+	<br><br>
+
+	<img src="images/ConnectionProfileWsdlUrl.png" 
+			style="border: 1px solid;" alt="WSDL URL dialog"
+			title="WSDL URL" />
+
+	<br><br>
+
+	After finishing the connection profile wizard, the <code>Source and WSDL Operations Definition</code> page will
+	have the connection profile, WSDL URL, port, binding, service mode, and WSDL operations all set. Keep both
+	operations checked so that queries can be run against both. This is what the completed wizard page will look like:
+
+	<br><br>
+
+	<img src="images/WizardCompletedPage1.png" 
+			style="border: 1px solid;" alt="Create Relational Model from Web Service wizard Source and WSDL Operations Definition page"
+			title="Create Relational Model from Web Service Source and WSDL Operations Definition" />
+
+	<br><br>
+
+	Clicking <code>Next ></code> will take you to the <code>Models Definition</code> page where the model names and locations are set.
+	You can change the default model names if you want. Here is what the <code>Models Definition</code> wizard page
+	looks like:
+
+	<br><br>
+ 
+	<img src="images/WizardModelDefinitionPage2.png" 
+			style="border: 1px solid;" alt="Create Relational Model from Web Service wizard Models Definition page"
+			title="Create Relational Model from Web Service Models Definition" />
+
+	<br><br>
+
+	Clicking <code>Next ></code> takes you to the <code>Procedure Definition</code> wizard page. On this page you define
+	the requests and responses. The <code>Procedure Definition</code> looks like this:
+	
+	<br><br>
+
+	<img src="images/WizardRequestProcedure.png" 
+			style="border: 1px solid;" alt="Web service model data flow"
+			title="Web service model data flow" />
+
+	<br><br>
+
+	The <code>GetAllStateInfo</code> operation does not need request element so there is nothing to do for the request.
+	However the <code>GetStateInfo</code> operation does need a request element. At the top of the page, select the
+	<code>GetStateInfo</code> operation in the combo. Once you select the operation, the body <code>Schema Contents</code>
+	changes. In the <code>Schema Contents</code> tree, select <code>stateCode</code> and click the <code>Add</code> button
+	to add the element to the request. Click on the <code>Response</code> button to define the operation responses. For <strong>both</strong>
+	operations add all the <code>Schema Contents</code> elements (Name, Abbreviation, Capital, and YearOfStatehood). Here is
+	how the wizard page looks after completing the response for <code>GetAllStateInfo</code>:
+
+	<br><br>
+
+	<img src="images/WizardResponseProcedure.png" 
+			style="border: 1px solid;" alt="Web service model data flow"
+			title="Web service model data flow" />
+
+	<br><br>
+
+	After completing the request and two responses, click <code>Finish</code> to generate the source and view models. These generated models will
+	appear in your workspace in the <var>Model Explorer</var> tree. Expanding the generated models should look like this:
+
+	<br><br>
+
+	<img src="images/ModelExplorerAfterImport.png" 
+			style="border: 1px solid;" alt="Web service model data flow"
+			title="Web service model data flow" />
+
+	<br><br>
+
+	The source model provides the invoke procedure exposed by the web service translator. The virtual model's procedures combine the creation of
+    the requests to the service, the execution of the request, and the extraction of the values from the result. The <code>GetStateInfo</code>
+    and <code>GetAllStateInfo</code> procedures provide an abstraction that conceals the web service implementation behind relational semantics. Those
+    procedures can be to preview the result data from within <var>Designer</var>. But in order to do that, you need to create a connection to a 
+    <var>Teiid</var> instance.
+    
+	<h3>Teiid Setup</h3>
+    
+    The <var>Teiid View</var> is used to manage your <var>Teiid</var> instances. If the <var>Teiid View</var> is not open, 
+    select <code>Window -> Show View -> Teiid</code>. Then, either <code>right-click -> New Teiid Instance</code> or just use the view toolbar button.
+    Here is the <var>New Teiid Instance</var> dialog filled in with all the default values:
+  
+	<br><br>
+
+	<img src="images/TeiidInstanceDialog.png" 
+			style="border: 1px solid;" alt="Web service model data flow"
+			title="Web service model data flow" />
+
+	<br><br>
+
+	Click the <code>Test</code> button to verify <var>Designer</var> can communicate with the <var>Teiid</var> instance. If the connection
+	can be established you will see this dialog:
+
+	<br><br>
+
+	<img src="images/TestTeiidConnectionDialog.png" 
+			style="border: 1px solid;" alt="Web service model data flow"
+			title="Web service model data flow" />
+
+	<br><br>
+
+	After closing the <code>New Teiid Instance</code> dialog your <var>Teiid</var> instance will appear in the <var>Teiid View</var> like this:
+	
+	<br><br>
+
+	<img src="images/TeiidView.png" 
+			style="border: 1px solid;" alt="Teiid View"
+			title="Teiid View" />
+
+	<br><br>
+
+	<h3>Preview Data</h3>
+
+	After successfully creating a <var>Teiid</var> instance, you can preview the results data. In the <var>Model Explorer</var>, select 
+	the <code>GetAllStateInfo</code> procedure in the view model. Then, select <code>right-click -> Modeling -> Preview Data</code> to
+	run preview. The <var>SQL Results</var> and <var>Teiid Execution Plan</var> views will be displayed. You should see these results:
+	
+	<br><br>
+
+	<img src="images/ResultsView.png" 
+			style="border: 1px solid;" alt="SQL Results View"
+			title="SQL Results View" />
+
+	<br><br>
+
+	<em>Note:</em> In order to preview <code>GetStateInfo</code>, the <code>GetStateInfo_request</code> procedure's transformation must be changed. 
+	To do this, open the view model in a <var>Model Editor</var> and open the transformation editor for the <code>GetStateInfo_request</code> procedure.
+	The generated transformation procedure code is wrong and should be changed to the following:
+	
+	<pre>
+	CREATE VIRTUAL PROCEDURE
+	BEGIN
+	  SELECT XMLELEMENT(NAME GetStateInfo, XMLNAMESPACES(DEFAULT ''), XMLELEMENT(NAME stateCode, stateServiceView.GetStateInfo_request.stateCode)) AS xml_out;
+	END
+	</pre>
+
+	Once you have changed the transformation code, select <code>GetStateInfo</code> in the <var>Model Explorer</var>. Then select 
+	<code>right-click -> Modeling -> Preview Data</code> to run preview. This preview requires an input so a dialog is displayed asking
+	for user input. Just enter a two letter US state abbreviation, like "VA" and continue with the preview. This time only the information
+	for the one state will be displayed.  
+
+	<h3>Testing With A Virtual Database (VDB)</h3>
+
+	So far you've been testing the models using your own workspace using the <var>Designer</var>'s preview feature. If you wanted these 
+	models to be available to your enterprise, you could deploy them to <var>Teiid</var> using a VDB. Create a VDB by running
+	<code>New -> Teiid VDB</code>. On the <code>Models</code> tab click on the <code>Add model</code> button and add the source and view model.
+	
+	<br><br>
+
+	After the VDB is created, select it in the <var>Model Explorer</var>. Then <code>right-click -> Modeling -> Deploy</code>. The VDB is
+	now being deployed to your <var>Teiid</var> instance. Looking at the <var>Teiid View</var> you should see your VDB in the <code>VDBs</code>
+	folder. It should look like this:
+
+	<br><br>
+
+	<img src="images/DeployedVdbTeiidView.png" 
+			style="border: 1px solid;" alt="Teiid View showing deployed VDB"
+			title="Teiid View Showing Deployed VDB" />
+
+	<br><br>
+
+	The VDB now can be queried using the <var>Database Development</var> perspective or any other SQL query tool. Select the VDB in the
+	<var>Model Explorer</var>. Then <code>right-click -> Modeling -> Execute VDB</code>. This will open the <var>Database Development</var>
+	perspective where you can use its <var>SQL Scrapbook</var> view to enter and execute SQL queries.
+	
+	<br><br>
+
+	Here are a couple queries you can execute in the scrapbook:
+
+	<ul>
+		<li>exec your-vdb-name.getAllStateInfo();</li>
+		<li>exec your-vdb-name.getStateInfo('ny');</li>
+	</ul>
+</body>
+</html>

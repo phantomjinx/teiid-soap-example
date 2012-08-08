@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>US_States</name>
-	<comment>No Product Application, version 7.1.0.v20110116-0811-H394-CR1</comment>
+	<comment>No Product Application, version 7.7.1</comment>
 	<projects>
 	</projects>
 	<buildSpec>
+		<buildCommand>
+			<name>org.teiid.designer.extension.ui.modelExtensionDefinitionBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 		<buildCommand>
 			<name>org.teiid.designer.core.modelBuilder</name>
 			<arguments>
