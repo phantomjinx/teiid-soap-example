@@ -15,22 +15,22 @@ import javax.xml.ws.ResponseWrapper;
  * 
  */
  
-@WebService(targetNamespace = "http://www.teiid.org/stateService/", name = "stateService")
+@WebService(name = "stateService", targetNamespace = "http://www.teiid.org/stateService/")
 @XmlSeeAlso({ObjectFactory.class})
 public interface StateService {
-
-    @WebResult(name = "AllStateInfo", targetNamespace = "")
-    @RequestWrapper(localName = "GetAllStateInfo", targetNamespace = "http://www.teiid.org/stateService/", className = "org.teiid.stateservice.GetAllStateInfo")
-    @ResponseWrapper(localName = "GetAllStateInfoResponse", targetNamespace = "http://www.teiid.org/stateService/", className = "org.teiid.stateservice.GetAllStateInfoResponse")
+	
+    @WebResult(name = "AllStateInfo")
+    @RequestWrapper(localName = "GetAllStateInfo", className = "org.teiid.stateservice.GetAllStateInfo")
+    @ResponseWrapper(localName = "GetAllStateInfoResponse", className = "org.teiid.stateservice.GetAllStateInfoResponse")
     @WebMethod(operationName = "GetAllStateInfo", action = "http://www.teiid.org/stateService/GetStateInfo")
-    public java.util.List<org.teiid.stateservice.StateInfo> getAllStateInfo();
+	public java.util.List<org.teiid.stateservice.StateInfo> getAllStateInfo();
 
-    @WebResult(name = "StateInfo", targetNamespace = "")
-    @RequestWrapper(localName = "GetStateInfo", targetNamespace = "http://www.teiid.org/stateService/", className = "org.teiid.stateservice.GetStateInfo")
-    @ResponseWrapper(localName = "GetStateInfoResponse", targetNamespace = "http://www.teiid.org/stateService/", className = "org.teiid.stateservice.GetStateInfoResponse")
+    @WebResult(name = "StateInfo")
+    @RequestWrapper(localName = "GetStateInfo", className = "org.teiid.stateservice.GetStateInfo")
+    @ResponseWrapper(localName = "GetStateInfoResponse", className = "org.teiid.stateservice.GetStateInfoResponse")
     @WebMethod(operationName = "GetStateInfo", action = "http://www.teiid.org/stateService/GetStateInfo")
     public org.teiid.stateservice.StateInfo getStateInfo(
-        @WebParam(name = "stateCode", targetNamespace = "http://www.teiid.org/stateService/")
+        @WebParam(name = "stateCode")
         java.lang.String stateCode
     ) throws GetStateInfoFault_Exception;
 }

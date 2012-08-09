@@ -1,8 +1,11 @@
 
-exec StatesView.getAllStates();
+exec stateServiceView.getAllStateInfo();
 
-exec StatesView.getAllStatesXML();
+exec stateServiceView.getStateInfo_request('ny');
 
-exec StatesView.getState('ny');
+exec stateServiceView.getStateInfo('ny');
+
+
+
 
 

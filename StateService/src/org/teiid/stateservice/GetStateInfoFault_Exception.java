@@ -11,7 +11,7 @@ import javax.xml.ws.WebFault;
  * 
  */
 
-@WebFault(name = "GetStateInfoFault", targetNamespace = "http://www.teiid.org/stateService/")
+@WebFault(name = "GetStateInfoFault")
 public class GetStateInfoFault_Exception extends Exception {
     public static final long serialVersionUID = 20110119134429L;
     

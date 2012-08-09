@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagram="http://www.metamatrix.com/metamodels/Diagram" xmlns:mmcore="http://www.metamatrix.com/metamodels/Core" xmlns:relational="http://www.metamatrix.com/metamodels/Relational" xmlns:transformation="http://www.metamatrix.com/metamodels/Transformation">
+  <mmcore:ModelAnnotation xmi:uuid="mmuuid:8631a4d8-189a-4507-8bc4-1c39a549dd39" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational" modelType="VIRTUAL" ProducerName="Teiid Designer" ProducerVersion="7.8.0.v20120709-1701-H10-Final">
+    <modelImports xmi:uuid="mmuuid:a3b01aed-f48d-4a6f-bfcb-3619400c3fd4" name="SimpleDatatypes-instance" modelLocation="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:da8d82d3-d342-4285-8f61-7c84a198887f" name="XMLSchema" modelLocation="http://www.w3.org/2001/XMLSchema" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:2ada3c35-2536-493b-a8c5-e8a828e91317" name="stateService" modelLocation="stateService.xmi" uuid="mmuuid:80ba8050-3857-465c-b27f-f5640306eb5d" modelType="PHYSICAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational"/>
+  </mmcore:ModelAnnotation>
+  <mmcore:AnnotationContainer xmi:uuid="mmuuid:71c8f314-f4ef-438c-afd9-3a409a01c223"/>
+  <diagram:DiagramContainer xmi:uuid="mmuuid:6497789a-b225-4ffc-90dd-5d45ff0c0180">
+    <diagram xmi:uuid="mmuuid:89169677-3952-4f76-95e9-2b9c8fe1e3ca" type="packageDiagramType" target="mmuuid/8631a4d8-189a-4507-8bc4-1c39a549dd39">
+      <diagramEntity xmi:uuid="mmuuid:85f4c326-0e0d-4c43-bffe-badef1cbb086" modelObject="mmuuid/d917cef7-a227-4299-afc2-56ff10902342" xPosition="333" yPosition="311"/>
+      <diagramEntity xmi:uuid="mmuuid:651cb483-0a5d-4308-981e-5cbe6bbebc52" modelObject="mmuuid/eca04918-e73f-4000-be54-dacd46673d64" xPosition="10" yPosition="10"/>
+      <diagramEntity xmi:uuid="mmuuid:07fb680e-8673-475d-a714-8840cd2b76ac" modelObject="mmuuid/ac3b432e-497e-4109-b6b5-df9042e1b4bb" xPosition="10" yPosition="311"/>
+      <diagramEntity xmi:uuid="mmuuid:9061afda-2de3-4d50-b0f4-788394a82741" modelObject="mmuuid/705295ea-47c2-4947-bd4c-a6f91f78d99a" xPosition="656" yPosition="10"/>
+      <diagramEntity xmi:uuid="mmuuid:856af15b-ebea-4665-9e02-cffddc4cd836" modelObject="mmuuid/7a7c97dd-d558-4630-89ed-5948ab7f55d1" xPosition="333" yPosition="10"/>
+      <diagramEntity xmi:uuid="mmuuid:21a971a7-8792-4dd2-8510-4235c6d3f62a" modelObject="mmuuid/1bdba8ce-07de-45b7-8efb-d818aa7f7ae9" xPosition="656" yPosition="242"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:06c5325f-527a-4a49-b8dc-bf61aa42745a" type="transformationDiagramType" target="mmuuid/ac3b432e-497e-4109-b6b5-df9042e1b4bb">
+      <diagramEntity xmi:uuid="mmuuid:53ecf4e9-371c-430e-bfd4-58234d5674be" modelObject="mmuuid/ac3b432e-497e-4109-b6b5-df9042e1b4bb" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:107a4c2c-6c1b-4301-bc63-19be1f736852" name="T" modelObject="mmuuid/161835d0-d97c-4fee-8495-cbbac8d8037f" xPosition="327" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:448e9212-a8b8-4841-966f-c9ec5a698191" modelObject="mmuuid/d917cef7-a227-4299-afc2-56ff10902342" xPosition="377" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:9ce1e11a-69b6-4bdb-adf6-77dbdc2d4b2f" xPosition="687" yPosition="50">
+        <modelObject href="stateService.xmi#mmuuid/4f688374-b9fe-4c50-a7be-924de66e7dd1"/>
+      </diagramEntity>
+      <diagramEntity xmi:uuid="mmuuid:75ead591-4854-49d2-bfa3-d2ebffacaefa" modelObject="mmuuid/eca04918-e73f-4000-be54-dacd46673d64" xPosition="932" yPosition="50"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:f2cc280c-3693-4415-8218-ab0212ba7f64" type="transformationDiagramType" target="mmuuid/705295ea-47c2-4947-bd4c-a6f91f78d99a">
+      <diagramEntity xmi:uuid="mmuuid:a73fc18f-f0b9-4197-a071-d5da3f969054" modelObject="mmuuid/705295ea-47c2-4947-bd4c-a6f91f78d99a" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:e106e47e-5e22-42bb-8bf9-cf2b93301a11" name="T" modelObject="mmuuid/f0bc9d46-6917-4b91-9354-d6093b28eb11" xPosition="310" yPosition="50"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:9e38afa6-a1a3-4c31-a3a5-e06fbdc9036e" type="transformationDiagramType" target="mmuuid/7a7c97dd-d558-4630-89ed-5948ab7f55d1">
+      <diagramEntity xmi:uuid="mmuuid:71710cf2-1384-4a8c-a7fe-55bd6aa6adeb" modelObject="mmuuid/7a7c97dd-d558-4630-89ed-5948ab7f55d1" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:996a2ce0-f157-4856-a3d0-55bf25975532" name="T" modelObject="mmuuid/9c9277cc-d31d-45e6-8533-58137dda8ca6" xPosition="327" yPosition="50"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:1ab4e01b-6fd7-463e-a93e-c8b3da045078" type="transformationDiagramType" target="mmuuid/1bdba8ce-07de-45b7-8efb-d818aa7f7ae9">
+      <diagramEntity xmi:uuid="mmuuid:8dbc1ed2-015f-4b1c-86fe-449894c4a62c" modelObject="mmuuid/1bdba8ce-07de-45b7-8efb-d818aa7f7ae9" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:f83f71b1-cee7-4e8b-aeb5-14ed14cb8c8c" name="T" modelObject="mmuuid/82771e54-2d49-4a98-9f8c-ae1f55584552" xPosition="327" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:b9000eb5-c496-44b9-a1fd-1ec4b5c07d7a" modelObject="mmuuid/705295ea-47c2-4947-bd4c-a6f91f78d99a" xPosition="377" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:ce5e4e4e-c46a-433c-81cc-a916a84e12ac" xPosition="667" yPosition="50">
+        <modelObject href="stateService.xmi#mmuuid/4f688374-b9fe-4c50-a7be-924de66e7dd1"/>
+      </diagramEntity>
+      <diagramEntity xmi:uuid="mmuuid:e70bd000-f7f7-40f9-a3eb-ed4f92b8e5c5" modelObject="mmuuid/7a7c97dd-d558-4630-89ed-5948ab7f55d1" xPosition="912" yPosition="50"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:bd513353-8077-4835-b658-8150f55119bc" type="transformationDiagramType" target="mmuuid/eca04918-e73f-4000-be54-dacd46673d64">
+      <diagramEntity xmi:uuid="mmuuid:44e20b01-da4b-4930-a1d8-0be4510d4b6d" modelObject="mmuuid/eca04918-e73f-4000-be54-dacd46673d64" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:801af9ca-1486-4467-b57e-a9756b2ddc5b" name="T" modelObject="mmuuid/a8239750-8935-4b18-bd00-ddf08269dae5" xPosition="343" yPosition="50"/>
+    </diagram>
+  </diagram:DiagramContainer>
+  <transformation:TransformationContainer xmi:uuid="mmuuid:fe4fcf9b-0af8-4a10-ac67-21d6a5275eea">
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:33e2a284-c4b0-4259-a3ef-751e3fdd0e78" outputs="mmuuid/d917cef7-a227-4299-afc2-56ff10902342" target="mmuuid/d917cef7-a227-4299-afc2-56ff10902342">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:411ad0d6-3ae3-4a96-b8ce-148d9c4b2072">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:b5cafdc0-8e90-4558-b9b0-f19b25a7593c" selectSql="CREATE VIRTUAL PROCEDURE&#xa;BEGIN&#xa;&#x9;SELECT&#xa;&#x9;&#x9;XMLELEMENT(NAME GetAllStateInfo, XMLNAMESPACES(DEFAULT 'http://www.teiid.org/stateService/') &#xa;) AS xml_out;&#xa;END"/>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:ad882e20-6a59-4b40-91e2-240e87a1bc98" outputs="mmuuid/d636b79c-7a67-4e85-8d5b-c487787192e9"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:a8239750-8935-4b18-bd00-ddf08269dae5" outputs="mmuuid/eca04918-e73f-4000-be54-dacd46673d64" target="mmuuid/eca04918-e73f-4000-be54-dacd46673d64">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:e7478004-db39-4fad-ba40-2052301c8dac">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:2ab8cb26-2bdd-416e-9b6a-29ff69064dce" selectSql="CREATE VIRTUAL PROCEDURE&#xa;BEGIN&#xa;&#x9;SELECT t.* FROM&#xa;&#x9;&#x9;XMLTABLE(XMLNAMESPACES('http://www.teiid.org/stateService/' AS ns) , '/ns:GetAllStateInfoResponse/AllStateInfo' PASSING stateServiceView.GetAllStateInfo_response.xml_in &#xa;&#x9;COLUMNS &#xa;&#x9;&#x9;Name string PATH '/Name', &#xa;&#x9;&#x9;Abbreviation string PATH '/Abbreviation', &#xa;&#x9;&#x9;Capital string PATH '/Capital', &#xa;&#x9;&#x9;YearOfStatehood biginteger PATH '/YearOfStatehood') AS t;&#xa;END"/>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:dccf4d37-533e-46ae-8879-e2cd49169547" outputs="mmuuid/bb40789a-3526-4f81-8e34-be04a8534414"/>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:0d799f9b-e77c-4e2c-a8d4-2d92b0e485e3" outputs="mmuuid/713d6a94-ec0e-4572-8a0d-cc41ef508d73"/>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:3a38bd46-f123-4b61-a036-776de61111d5" outputs="mmuuid/d10d46bd-e73e-4074-be83-9da653db181f"/>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:238a3415-48a3-410d-80eb-66562966cda3" outputs="mmuuid/49c0a562-3411-42b8-bbd0-a83c5465935a"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:161835d0-d97c-4fee-8495-cbbac8d8037f" outputs="mmuuid/ac3b432e-497e-4109-b6b5-df9042e1b4bb" target="mmuuid/ac3b432e-497e-4109-b6b5-df9042e1b4bb">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:5ff39fd8-e86c-42d2-b722-8c1e8cfb6f80">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:fe23f151-1bd5-48ea-919e-9b6e29bd94d7" selectSql="CREATE VIRTUAL PROCEDURE&#xa;BEGIN&#xa;&#x9;SELECT t.* FROM&#xa;&#x9;&#x9;TABLE(EXEC stateServiceView.GetAllStateInfo_request())&#xa;&#x9;&#x9;&#x9;&#x9;AS request,&#xa;&#x9;&#x9;TABLE(EXEC stateService.invoke('SOAP11', 'http://www.teiid.org/stateService/GetStateInfo', REQUEST.xml_out, null))&#xa;&#x9;&#x9;&#x9;&#x9;AS response,&#xa;&#x9;&#x9;TABLE(EXEC stateServiceView.GetAllStateInfo_response(RESPONSE.result))&#xa;&#x9;&#x9;&#x9;&#x9;AS t;&#xa;END"/>
+        <aliases xmi:uuid="mmuuid:574ccc4f-23ff-47c7-8d51-9187f34d35d3" alias="GetAllStateInfo_request" aliasedObject="mmuuid/d917cef7-a227-4299-afc2-56ff10902342"/>
+        <aliases xmi:uuid="mmuuid:8bddbe9b-a6c0-4032-8761-8f5ce05b65d1" alias="invoke">
+          <aliasedObject href="stateService.xmi#mmuuid/4f688374-b9fe-4c50-a7be-924de66e7dd1"/>
+        </aliases>
+        <aliases xmi:uuid="mmuuid:14b7f999-48ee-4a7b-9842-624cfac98c82" alias="GetAllStateInfo_response" aliasedObject="mmuuid/eca04918-e73f-4000-be54-dacd46673d64"/>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:a63e6540-ec19-48a0-9849-7ca580191e26" inputs="mmuuid/bb40789a-3526-4f81-8e34-be04a8534414" outputs="mmuuid/684d7e37-bb22-472d-b6f0-1277133a9a53"/>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:52269d91-cc3e-4311-9824-6713f5af2e8a" inputs="mmuuid/713d6a94-ec0e-4572-8a0d-cc41ef508d73" outputs="mmuuid/fbf85008-5fd4-4012-9ec6-1df5091d90a9"/>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:4e55c500-167e-405e-ac7d-918350220049" inputs="mmuuid/d10d46bd-e73e-4074-be83-9da653db181f" outputs="mmuuid/468f9189-8b69-4e74-8eba-658a8e10651f"/>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:281ce5a3-5c04-4256-90cc-7c440359ec1f" inputs="mmuuid/49c0a562-3411-42b8-bbd0-a83c5465935a" outputs="mmuuid/5d62490f-58f2-4fe5-8175-fae9e3d0b8e7"/>
+      <inputs href="#mmuuid/d917cef7-a227-4299-afc2-56ff10902342"/>
+      <inputs href="stateService.xmi#mmuuid/4f688374-b9fe-4c50-a7be-924de66e7dd1"/>
+      <inputs href="#mmuuid/eca04918-e73f-4000-be54-dacd46673d64"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:f0bc9d46-6917-4b91-9354-d6093b28eb11" outputs="mmuuid/705295ea-47c2-4947-bd4c-a6f91f78d99a" target="mmuuid/705295ea-47c2-4947-bd4c-a6f91f78d99a">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:4ebe31c3-e233-49ea-a295-44ed89d71be5">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:5e184dca-59df-40ac-b9bf-449b5c5755d8" selectSql="CREATE VIRTUAL PROCEDURE&#xa;BEGIN&#xa;&#x9;SELECT XMLELEMENT(NAME GetStateInfo, XMLNAMESPACES(DEFAULT 'http://www.teiid.org/stateService/'), XMLELEMENT(NAME stateCode, XMLNAMESPACES(NO DEFAULT), stateServiceView.GetStateInfo_request.stateCode)) AS xml_out;&#xa;END"/>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:6fd27be0-dca5-49c5-aa7e-3365a873ebd9" inputs="mmuuid/ed2eac0a-201f-4ea6-b959-0c857b5327f9" outputs="mmuuid/420940b3-db31-47ae-9376-1089173c92fa"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:9c9277cc-d31d-45e6-8533-58137dda8ca6" outputs="mmuuid/7a7c97dd-d558-4630-89ed-5948ab7f55d1" target="mmuuid/7a7c97dd-d558-4630-89ed-5948ab7f55d1">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:707842d5-3fa1-435a-8be7-1f8725e7e7d4">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:308019e1-7393-4809-985e-a48575a2f9e0" selectSql="CREATE VIRTUAL PROCEDURE&#xa;BEGIN&#xa;&#x9;SELECT t.* FROM XMLTABLE(XMLNAMESPACES('http://www.teiid.org/stateService/' AS ns), '/ns:GetStateInfoResponse/StateInfo' PASSING stateServiceView.GetStateInfo_response.xml_in COLUMNS Name string PATH '/Name', Abbreviation string PATH '/Abbreviation', Capital string PATH '/Capital', YearOfStatehood biginteger PATH '/YearOfStatehood') AS t;&#xa;END"/>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:84900afd-c7a0-4cba-a79c-55b060bc37c3" outputs="mmuuid/2f0806a4-0ccc-4bf0-ac8c-50c7c9d05770"/>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:cb660ff8-8b31-4387-869e-b42691128018" outputs="mmuuid/2104a8f4-a397-4fe3-afab-fc2ada96fbb0"/>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:ef6d23e7-5267-4658-906f-e9d38afa3789" outputs="mmuuid/7c490ce0-b1d3-4f5d-a95f-80cede32524e"/>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:4b8ebb29-fa03-4365-a298-6f4ddf118eeb" outputs="mmuuid/2ac7e7bd-4634-42fd-8eb0-78190749ba9f"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:82771e54-2d49-4a98-9f8c-ae1f55584552" outputs="mmuuid/1bdba8ce-07de-45b7-8efb-d818aa7f7ae9" target="mmuuid/1bdba8ce-07de-45b7-8efb-d818aa7f7ae9">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:fc101f5f-2c8a-4c88-8d81-8027de288f5d">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:5e8b5737-d44e-437b-9a71-e37030f04e14" selectSql="CREATE VIRTUAL PROCEDURE&#xa;BEGIN&#xa;&#x9;SELECT t.* FROM&#xa;&#x9;&#x9;TABLE(EXEC stateServiceView.GetStateInfo_request(&#x9;&#x9;&#x9;&#x9;stateServiceView.GetStateInfo.stateCode))&#xa;&#x9;&#x9;&#x9;&#x9;AS request,&#xa;&#x9;&#x9;TABLE(EXEC stateService.invoke('SOAP11', 'http://www.teiid.org/stateService/GetStateInfo', REQUEST.xml_out, null))&#xa;&#x9;&#x9;&#x9;&#x9;AS response,&#xa;&#x9;&#x9;TABLE(EXEC stateServiceView.GetStateInfo_response(RESPONSE.result))&#xa;&#x9;&#x9;&#x9;&#x9;AS t;&#xa;END"/>
+        <aliases xmi:uuid="mmuuid:516dc170-3a14-4667-b440-4a8cd475ec63" alias="GetStateInfo_request" aliasedObject="mmuuid/705295ea-47c2-4947-bd4c-a6f91f78d99a"/>
+        <aliases xmi:uuid="mmuuid:18558874-2371-42a7-ba94-99d085a54153" alias="invoke">
+          <aliasedObject href="stateService.xmi#mmuuid/4f688374-b9fe-4c50-a7be-924de66e7dd1"/>
+        </aliases>
+        <aliases xmi:uuid="mmuuid:90b0e01b-1a27-45d4-bc3d-259074e49034" alias="GetStateInfo_response" aliasedObject="mmuuid/7a7c97dd-d558-4630-89ed-5948ab7f55d1"/>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:5f24913b-ddae-4c20-86a4-4048b5347aaa" inputs="mmuuid/2f0806a4-0ccc-4bf0-ac8c-50c7c9d05770" outputs="mmuuid/8177b522-25cd-4aea-a505-f65f826a238d"/>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:4b77d9e3-5d53-45b9-9854-cd1c949e85da" inputs="mmuuid/2104a8f4-a397-4fe3-afab-fc2ada96fbb0" outputs="mmuuid/bd579144-23ed-4130-b84e-8b7ca978d797"/>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:7eff32a2-64dd-49ef-895e-dc48ee44923e" inputs="mmuuid/7c490ce0-b1d3-4f5d-a95f-80cede32524e" outputs="mmuuid/033efe3f-2640-47fc-9907-9069cd975c9e"/>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:702317a8-536c-4cb6-a7fd-92ccfbe2212f" inputs="mmuuid/2ac7e7bd-4634-42fd-8eb0-78190749ba9f" outputs="mmuuid/231db045-4652-44cd-aa04-eed0bed4c8a6"/>
+      <inputs href="#mmuuid/705295ea-47c2-4947-bd4c-a6f91f78d99a"/>
+      <inputs href="stateService.xmi#mmuuid/4f688374-b9fe-4c50-a7be-924de66e7dd1"/>
+      <inputs href="#mmuuid/7a7c97dd-d558-4630-89ed-5948ab7f55d1"/>
+    </transformationMappings>
+  </transformation:TransformationContainer>
+  <relational:Procedure xmi:uuid="mmuuid:d917cef7-a227-4299-afc2-56ff10902342" name="GetAllStateInfo_request">
+    <result xmi:uuid="mmuuid:83bf638d-9fb4-4fea-b83f-64b5399dcd87" name="Result">
+      <columns xmi:uuid="mmuuid:d636b79c-7a67-4e85-8d5b-c487787192e9" name="xml_out">
+        <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#XMLLiteral"/>
+      </columns>
+    </result>
+  </relational:Procedure>
+  <relational:Procedure xmi:uuid="mmuuid:eca04918-e73f-4000-be54-dacd46673d64" name="GetAllStateInfo_response">
+    <parameters xmi:uuid="mmuuid:8db0feaf-291a-4820-b236-3319187b3dc3" name="xml_in">
+      <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#XMLLiteral"/>
+    </parameters>
+    <result xmi:uuid="mmuuid:d6cfc103-a560-4d13-b38f-98b4cd02b04a" name="Result">
+      <columns xmi:uuid="mmuuid:bb40789a-3526-4f81-8e34-be04a8534414" name="Name" length="4000">
+        <type href="http://www.w3.org/2001/XMLSchema#string"/>
+      </columns>
+      <columns xmi:uuid="mmuuid:713d6a94-ec0e-4572-8a0d-cc41ef508d73" name="Abbreviation" length="4000">
+        <type href="http://www.w3.org/2001/XMLSchema#string"/>
+      </columns>
+      <columns xmi:uuid="mmuuid:d10d46bd-e73e-4074-be83-9da653db181f" name="Capital" length="4000">
+        <type href="http://www.w3.org/2001/XMLSchema#string"/>
+      </columns>
+      <columns xmi:uuid="mmuuid:49c0a562-3411-42b8-bbd0-a83c5465935a" name="YearOfStatehood">
+        <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#biginteger"/>
+      </columns>
+    </result>
+  </relational:Procedure>
+  <relational:Procedure xmi:uuid="mmuuid:ac3b432e-497e-4109-b6b5-df9042e1b4bb" name="GetAllStateInfo">
+    <result xmi:uuid="mmuuid:ac3b0128-4e9a-4468-bdef-bc253d3d28f1" name="Result">
+      <columns xmi:uuid="mmuuid:684d7e37-bb22-472d-b6f0-1277133a9a53" name="Name" length="4000">
+        <type href="http://www.w3.org/2001/XMLSchema#string"/>
+      </columns>
+      <columns xmi:uuid="mmuuid:fbf85008-5fd4-4012-9ec6-1df5091d90a9" name="Abbreviation" length="4000">
+        <type href="http://www.w3.org/2001/XMLSchema#string"/>
+      </columns>
+      <columns xmi:uuid="mmuuid:468f9189-8b69-4e74-8eba-658a8e10651f" name="Capital" length="4000">
+        <type href="http://www.w3.org/2001/XMLSchema#string"/>
+      </columns>
+      <columns xmi:uuid="mmuuid:5d62490f-58f2-4fe5-8175-fae9e3d0b8e7" name="YearOfStatehood">
+        <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#biginteger"/>
+      </columns>
+    </result>
+  </relational:Procedure>
+  <relational:Procedure xmi:uuid="mmuuid:705295ea-47c2-4947-bd4c-a6f91f78d99a" name="GetStateInfo_request">
+    <parameters xmi:uuid="mmuuid:ed2eac0a-201f-4ea6-b959-0c857b5327f9" name="stateCode" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </parameters>
+    <result xmi:uuid="mmuuid:7559b835-4652-4dc0-b84f-1827a16b4177" name="Result">
+      <columns xmi:uuid="mmuuid:420940b3-db31-47ae-9376-1089173c92fa" name="xml_out">
+        <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#XMLLiteral"/>
+      </columns>
+    </result>
+  </relational:Procedure>
+  <relational:Procedure xmi:uuid="mmuuid:7a7c97dd-d558-4630-89ed-5948ab7f55d1" name="GetStateInfo_response">
+    <parameters xmi:uuid="mmuuid:d05c2df3-69c9-4f3f-a46c-b82822173aa5" name="xml_in">
+      <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#XMLLiteral"/>
+    </parameters>
+    <result xmi:uuid="mmuuid:0c3d928b-02e1-4a1f-b879-e36b94d948f5" name="Result">
+      <columns xmi:uuid="mmuuid:2f0806a4-0ccc-4bf0-ac8c-50c7c9d05770" name="Name" length="4000">
+        <type href="http://www.w3.org/2001/XMLSchema#string"/>
+      </columns>
+      <columns xmi:uuid="mmuuid:2104a8f4-a397-4fe3-afab-fc2ada96fbb0" name="Abbreviation" length="4000">
+        <type href="http://www.w3.org/2001/XMLSchema#string"/>
+      </columns>
+      <columns xmi:uuid="mmuuid:7c490ce0-b1d3-4f5d-a95f-80cede32524e" name="Capital" length="4000">
+        <type href="http://www.w3.org/2001/XMLSchema#string"/>
+      </columns>
+      <columns xmi:uuid="mmuuid:2ac7e7bd-4634-42fd-8eb0-78190749ba9f" name="YearOfStatehood">
+        <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#biginteger"/>
+      </columns>
+    </result>
+  </relational:Procedure>
+  <relational:Procedure xmi:uuid="mmuuid:1bdba8ce-07de-45b7-8efb-d818aa7f7ae9" name="GetStateInfo">
+    <parameters xmi:uuid="mmuuid:1b2b36e8-c2f3-4e47-9251-936a22214602" name="stateCode" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </parameters>
+    <result xmi:uuid="mmuuid:3e0e3198-3db2-4ff2-a24c-58c83546427a" name="Result">
+      <columns xmi:uuid="mmuuid:8177b522-25cd-4aea-a505-f65f826a238d" name="Name" length="4000">
+        <type href="http://www.w3.org/2001/XMLSchema#string"/>
+      </columns>
+      <columns xmi:uuid="mmuuid:bd579144-23ed-4130-b84e-8b7ca978d797" name="Abbreviation" length="4000">
+        <type href="http://www.w3.org/2001/XMLSchema#string"/>
+      </columns>
+      <columns xmi:uuid="mmuuid:033efe3f-2640-47fc-9907-9069cd975c9e" name="Capital" length="4000">
+        <type href="http://www.w3.org/2001/XMLSchema#string"/>
+      </columns>
+      <columns xmi:uuid="mmuuid:231db045-4652-44cd-aa04-eed0bed4c8a6" name="YearOfStatehood">
+        <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#biginteger"/>
+      </columns>
+    </result>
+  </relational:Procedure>
+</xmi:XMI>
