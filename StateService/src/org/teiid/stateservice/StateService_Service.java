@@ -27,14 +27,14 @@ import javax.xml.ws.Service;
 public class StateService_Service extends Service {
 
     public final static URL WSDL_LOCATION;
-    public final static QName SERVICE = new QName("http://www.teiid.org/stateService/", "stateService");
-    public final static QName StateServiceSOAP = new QName("http://www.teiid.org/stateService/", "stateServiceSOAP");
+    public final static QName SERVICE = new QName("http://www.teiid.org/stateService/", "stateService"); //$NON-NLS-1$ //$NON-NLS-2$
+    public final static QName StateServiceSOAP = new QName("http://www.teiid.org/stateService/", "stateServiceSOAP"); //$NON-NLS-1$ //$NON-NLS-2$
     static {
         URL url = null;
         try {
-            url = new URL("file:/NotBackedUp/jdoyle/jbds.h36/ws/StateService/WebContent/stateService.wsdl");
+            url = new URL("file:/NotBackedUp/jdoyle/jbds.h36/ws/StateService/WebContent/stateService.wsdl"); //$NON-NLS-1$
         } catch (MalformedURLException e) {
-            System.err.println("Can not initialize the default wsdl from file:/NotBackedUp/jdoyle/jbds.h36/ws/StateService/WebContent/stateService.wsdl");
+            System.err.println("Can not initialize the default wsdl from file:/NotBackedUp/jdoyle/jbds.h36/ws/StateService/WebContent/stateService.wsdl"); //$NON-NLS-1$
             // e.printStackTrace();
         }
         WSDL_LOCATION = url;
