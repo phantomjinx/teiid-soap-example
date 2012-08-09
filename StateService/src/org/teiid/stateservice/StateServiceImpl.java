@@ -1,9 +1,6 @@
 package org.teiid.stateservice;
 
 
-import javax.xml.bind.annotation.XmlSeeAlso;
-import javax.xml.ws.RequestWrapper;
-import javax.xml.ws.ResponseWrapper;
 import org.teiid.stateservice.StateService;
 import javax.jws.WebService;
 
@@ -20,7 +17,7 @@ public class StateServiceImpl implements StateService {
 			java.lang.String stateCode) throws GetStateInfoFault_Exception {
 		StateInfo info = stateData.getData(stateCode);
 		if(null == info) {
-			throw new GetStateInfoFault_Exception(stateCode + " is not a valid state abbreviation");
+			throw new GetStateInfoFault_Exception(stateCode + " is not a valid state abbreviation"); //$NON-NLS-1$
 		}
 		return info;
 	}
