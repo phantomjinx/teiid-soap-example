@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.teiid.org/stateService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="stateService" targetNamespace="http://www.teiid.org/stateService/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.teiid.org/stateService/">
+      <xsd:element name="GetStateInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="stateCode" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetStateInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="StateInfo" type="tns:StateInfo" minOccurs="1" maxOccurs="1"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetAllStateInfo">
+      	<xsd:complexType>
+      	</xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetAllStateInfoResponse">
+      	<xsd:complexType>
+      		<xsd:sequence>
+      			<xsd:element name="AllStateInfo" type="tns:StateInfo" minOccurs="50" maxOccurs="50"></xsd:element>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+    
+      <xsd:complexType name="StateInfo">
+      	<xsd:sequence>
+      		<xsd:element name="Name" type="xsd:string"></xsd:element>
+      		<xsd:element name="Abbreviation" type="xsd:string"></xsd:element>
+      		<xsd:element name="Capital" type="xsd:string"></xsd:element>
+      		<xsd:element name="YearOfStatehood" type="xsd:integer"></xsd:element>
+      	</xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="GetStateInfoFault">
+      	<xsd:complexType>
+      		<xsd:sequence>
+      			<xsd:element name="GetStateInfoFault"
+      				type="xsd:string">
+      			</xsd:element>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetStateInfoRequest">
+    <wsdl:part element="tns:GetStateInfo" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetStateInfoResponse">
+    <wsdl:part element="tns:GetStateInfoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetAllStateInfoRequest">
+  	<wsdl:part name="parameters" element="tns:GetAllStateInfo"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetAllStateInfoResponse">
+  	<wsdl:part name="parameters" element="tns:GetAllStateInfoResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetStateInfoFault">
+  	<wsdl:part name="parameters" element="tns:GetStateInfoFault"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="stateService">
+    <wsdl:operation name="GetStateInfo">
+      <wsdl:input message="tns:GetStateInfoRequest"/>
+      <wsdl:output message="tns:GetStateInfoResponse"/>
+            <wsdl:fault name="fault" message="tns:GetStateInfoFault"></wsdl:fault>
+        </wsdl:operation>
+    <wsdl:operation name="GetAllStateInfo">
+    	<wsdl:input message="tns:GetAllStateInfoRequest"></wsdl:input>
+    	<wsdl:output message="tns:GetAllStateInfoResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="stateServiceSOAP" type="tns:stateService">
+  	<soap:binding style="document"
+  		transport="http://schemas.xmlsoap.org/soap/http" />
+  	<wsdl:operation name="GetStateInfo">
+  		<soap:operation
+  			soapAction="http://www.teiid.org/stateService/GetStateInfo" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  		<wsdl:fault name="fault">
+  			<soap:fault use="literal" name="fault" />
+  		</wsdl:fault>
+  	</wsdl:operation>
+  	<wsdl:operation name="GetAllStateInfo">
+  		<soap:operation
+  			soapAction="http://www.teiid.org/stateService/GetAllStateInfo" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  	</wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="stateService">
+    <wsdl:port binding="tns:stateServiceSOAP" name="stateServiceSOAP">
+      <soap:address location="http://www.example.org/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
