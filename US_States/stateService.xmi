@@ -8,15 +8,18 @@
     <annotations xmi:uuid="mmuuid:97121520-0298-498b-90b0-363f0e3e8e6e" annotatedObject="mmuuid/065b0606-7f2c-400c-bdbe-df26a39ba005">
       <tags xmi:uuid="mmuuid:90f3d177-f085-4468-9916-51ce3f85c7dd" key="connectionProfile:connectionProfileName" value="US States SOAP"/>
       <tags xmi:uuid="mmuuid:548b86b1-6046-4bf9-8540-bfe55171c0e4" key="connection:EndPoint" value="http://localhost:8080/StateService/StateService"/>
-      <tags xmi:uuid="mmuuid:10a30fee-04a3-41cf-be31-c23ee1e5fcf0" key="connection:SecurityType" value="None"/>
+      <tags xmi:uuid="mmuuid:56e80384-4cbe-44ca-9d13-464b7e2c78eb" key="connection:SecurityType" value="HTTPBasic"/>
+      <tags xmi:uuid="mmuuid:08c78091-721d-46c4-aa15-c285cdd4e251" key="translator:DefaultBinding" value="SOAP11"/>
       <tags xmi:uuid="mmuuid:08d48382-d060-47b8-9e44-6b85aabb6cfd" key="connectionProfile:connectionProfileProviderId" value="org.teiid.designer.datatools.profiles.ws.WSSoapConnectionProfile"/>
       <tags xmi:uuid="mmuuid:0722f181-1e55-4269-9c1b-c77d7d4cdeac" key="translator:name" value="ws"/>
       <tags xmi:uuid="mmuuid:898e3b39-fbe6-4e69-9ace-5b4d27414d26" key="connection:wsdlURI" value="http://localhost:8080/StateService/StateService?wsdl"/>
       <tags xmi:uuid="mmuuid:8602474c-cf26-450c-9aa0-20aca7bf464d" key="connectionProfile:connectionProfileInstanceID" value="6f24d750-4227-11e3-b287-83644a578159"/>
+      <tags xmi:uuid="mmuuid:ba1c5d7f-1584-441e-9a8b-b6eec9c39a48" key="connection:AuthPassword" value="user"/>
       <tags xmi:uuid="mmuuid:e0a073e5-30f6-4802-bf75-a47222d17c27" key="translator:DefaultServiceMode" value="PAYLOAD"/>
       <tags xmi:uuid="mmuuid:bff09e2e-3849-40f5-b4a0-25aa4f594f35" key="connectionProfile:connectionProfileDescription" value=""/>
       <tags xmi:uuid="mmuuid:3763e2c7-c1cb-4e91-ac6c-927d58a3952c" key="connectionProfile:connectionProfileCategory" value="org.teiid.designer.import.category"/>
       <tags xmi:uuid="mmuuid:1d6d5478-0023-483b-9585-a1d11f6de15a" key="modelExtensionDefinition:relational" value="relational"/>
+      <tags xmi:uuid="mmuuid:8add252a-c51e-494a-9c4e-39a43c32803d" key="connection:AuthUserName" value="user"/>
     </annotations>
     <annotations xmi:uuid="mmuuid:71bd4265-e732-4bb4-b5a3-14f76e93bfa8" annotatedObject="mmuuid/1d6d5478-0023-483b-9585-a1d11f6de15a">
       <tags xmi:uuid="mmuuid:6226de25-60ec-43ec-9694-29a014f2bbbd" key="metamodel" value="http://www.metamatrix.com/metamodels/Relational"/>
