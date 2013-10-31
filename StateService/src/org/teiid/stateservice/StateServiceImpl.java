@@ -4,7 +4,10 @@ package org.teiid.stateservice;
 import org.teiid.stateservice.StateService;
 import javax.jws.WebService;
 
-@WebService(serviceName = "stateService", endpointInterface = "org.teiid.stateservice.StateService", targetNamespace = "http://www.teiid.org/stateService/")
+@WebService(serviceName = "stateService", 
+                      endpointInterface = "org.teiid.stateservice.StateService",
+                      targetNamespace = "http://www.teiid.org/stateService/",
+                      wsdlLocation = "WEB-INF/stateService.wsdl")
 public class StateServiceImpl implements StateService {
 	
 	StateData stateData = new StateData();

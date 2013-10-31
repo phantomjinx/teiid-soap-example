@@ -30,11 +30,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetAllStateInfo }
+     * Create an instance of {@link GetStateInfoResponse }
      * 
      */
-    public GetAllStateInfo createGetAllStateInfo() {
-        return new GetAllStateInfo();
+    public GetStateInfoResponse createGetStateInfoResponse() {
+        return new GetStateInfoResponse();
     }
 
     /**
@@ -46,19 +46,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetAllStateInfoResponse }
+     * Create an instance of {@link GetAllStateInfo }
      * 
      */
-    public GetAllStateInfoResponse createGetAllStateInfoResponse() {
-        return new GetAllStateInfoResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetStateInfo }
-     * 
-     */
-    public GetStateInfo createGetStateInfo() {
-        return new GetStateInfo();
+    public GetAllStateInfo createGetAllStateInfo() {
+        return new GetAllStateInfo();
     }
 
     /**
@@ -70,11 +62,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetStateInfoResponse }
+     * Create an instance of {@link GetStateInfo }
      * 
      */
-    public GetStateInfoResponse createGetStateInfoResponse() {
-        return new GetStateInfoResponse();
+    public GetStateInfo createGetStateInfo() {
+        return new GetStateInfo();
+    }
+
+    /**
+     * Create an instance of {@link GetAllStateInfoResponse }
+     * 
+     */
+    public GetAllStateInfoResponse createGetAllStateInfoResponse() {
+        return new GetAllStateInfoResponse();
     }
 
 }
