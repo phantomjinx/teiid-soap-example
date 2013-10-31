@@ -13,5 +13,10 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="/opt/jboss-7.1/modules/org/jboss/ws/api/main/jbossws-api-1.0.0.GA.jar"/>
+	<classpathentry kind="lib" path="/opt/jboss-7.1/modules/org/apache/ws/security/main/wss4j-1.6.5.jar"/>
+	<classpathentry kind="lib" path="/opt/jboss-7.1/modules/org/apache/cxf/main/cxf-api-2.4.6.jar"/>
+	<classpathentry kind="lib" path="/opt/jboss-7.1/modules/org/apache/cxf/main/cxf-rt-core-2.4.6.jar"/>
+	<classpathentry kind="lib" path="/opt/jboss-7.1/modules/org/apache/cxf/main/cxf-rt-ws-security-2.4.6.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
