@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://www.metamatrix.com/metamodels/Diagram" xmlns:mmcore="http://www.metamatrix.com/metamodels/Core" xmlns:relational="http://www.metamatrix.com/metamodels/Relational">
+  <mmcore:ModelAnnotation xmi:uuid="mmuuid:b84e1fc0-c18e-4dfc-937e-95e86be2741f" nameInSource="http://localhost:8080/StateService/StateService" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational" modelType="PHYSICAL" ProducerName="Teiid Designer" ProducerVersion="7.1.0.v20110119-0345-H399-CR1">
+    <modelImports xmi:uuid="mmuuid:c2f5b06d-a9b9-44c7-b5b1-fb70be0dd599" name="XMLSchema" modelLocation="http://www.w3.org/2001/XMLSchema" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:1ace6f27-89cb-495e-9a89-7e0ba01e5a7e" name="SimpleDatatypes-instance" modelLocation="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+  </mmcore:ModelAnnotation>
+  <relational:Procedure xmi:uuid="mmuuid:501159fd-677e-4612-81e0-2b8cab4aa900" name="invoke" nameInSource="invoke">
+    <parameters xmi:uuid="mmuuid:7ea4cac4-f3c8-4974-8d69-a486dd9d6e92" name="binding" nameInSource="binding" nullable="NULLABLE">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </parameters>
+    <parameters xmi:uuid="mmuuid:e7c95226-bded-45e8-a918-6eca0d089c23" name="action" nameInSource="action" nullable="NULLABLE">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </parameters>
+    <parameters xmi:uuid="mmuuid:7ed743da-6399-4a30-a326-72cacaacd1ee" name="request" nameInSource="request" nullable="NULLABLE">
+      <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#XMLLiteral"/>
+    </parameters>
+    <parameters xmi:uuid="mmuuid:b58a7667-4155-4ddd-a87c-2bea0e55a1c8" name="endpoint" nameInSource="endpoint" nullable="NULLABLE">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </parameters>
+    <parameters xmi:uuid="mmuuid:d0a72091-66a7-4587-92fa-adf871dfe37a" name="result" nameInSource="result" direction="OUT" nullable="NULLABLE">
+      <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#XMLLiteral"/>
+    </parameters>
+  </relational:Procedure>
+  <mmcore:AnnotationContainer xmi:uuid="mmuuid:9c4da622-2b65-486b-9494-86a28a23b935">
+    <annotations xmi:uuid="mmuuid:7a35b79d-3b6f-44fe-8366-b682e87e26bd" annotatedObject="mmuuid/b84e1fc0-c18e-4dfc-937e-95e86be2741f">
+      <tags xmi:uuid="mmuuid:58064244-343f-49a5-83f1-f06c7f1a6b1d" key="connectionProfile:connectionProfileProviderId" value="org.eclipse.datatools.enablement.oda.ws"/>
+      <tags xmi:uuid="mmuuid:1913ac00-f53a-4681-996d-e6fae7fda48c" key="connectionProfile:connectionProfileName" value="StateService"/>
+      <tags xmi:uuid="mmuuid:82868878-8b45-4f73-b388-d4952c5ae613" key="connectionProfile:connectionProfileDescription" value=""/>
+      <tags xmi:uuid="mmuuid:a549b37f-bce8-4b59-8722-d6fa69d83023" key="connection:sourceEndPoint" value="http://localhost:8080/StateService/StateService"/>
+      <tags xmi:uuid="mmuuid:39dd4640-0ceb-4041-9093-c872d91b4c94" key="connectionProfile:connectionProfileInstanceID" value="52219f20-28bd-11e0-a233-c2b7dae4a8eb"/>
+      <tags xmi:uuid="mmuuid:aa2711e4-1613-4c89-8bb8-f792d38f1ed5" key="connectionProfile:connectionProfileCategory" value="org.eclipse.datatools.enablement.oda.ws"/>
+      <tags xmi:uuid="mmuuid:76e45147-7b05-4f4a-bbc1-47e9320cabb6" key="translator:name" value="ws"/>
+      <tags xmi:uuid="mmuuid:38cba62a-b406-40fa-a07c-f002add5f36b" key="connection:wsdlURI" value="http://localhost:8080/StateService/StateService?wsdl"/>
+    </annotations>
+  </mmcore:AnnotationContainer>
+  <diagram:DiagramContainer xmi:uuid="mmuuid:0c54c04a-a5e1-4610-8b28-15e91cd2fe7d">
+    <diagram xmi:uuid="mmuuid:3516b356-ce53-41b0-9ce1-dabe75384b78" type="packageDiagramType" target="mmuuid/b84e1fc0-c18e-4dfc-937e-95e86be2741f">
+      <diagramEntity xmi:uuid="mmuuid:bd83ed63-fc30-47f4-8087-af3f7c039ad7" modelObject="mmuuid/501159fd-677e-4612-81e0-2b8cab4aa900" xPosition="10" yPosition="10"/>
+    </diagram>
+  </diagram:DiagramContainer>
+</xmi:XMI>
